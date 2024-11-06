@@ -27,39 +27,49 @@
         .text-primary{
             color: #0b4a99 !important;
         }
+        @media (max-width: 991px) {
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}
+
         
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-white fixed-top">
-        <div class="container">
+        <div class="container d-flex align-items-center justify-content-between">
           <a class="navbar-brand" href="index.html">
             <img src="images/logo-techlinx.jpg" class="img-fluid logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse  py-2 navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse py-2 navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item mx-2">
                 <a class="nav-link linkText active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link linkText " aria-current="page" href="#">About Us</a>
+                <a class="nav-link linkText" href="#">About Us</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link linkText " aria-current="page" href="our-services.html">Our Services</a>
+                <a class="nav-link linkText" href="our-services.html">Our Services</a>
               </li>
               <li class="nav-item mx-2">
-                <a class=" btn btn-primary rounded-pill px-5 py-2 text-white   " aria-current="page" href="#">Contact</a>
+                <a class="btn btn-primary rounded-pill px-5 py-2 text-white" href="contact.html">Contact</a>
               </li>
-              
-             
             </ul>
-           
           </div>
         </div>
       </nav>
+      
       <!--end of the navbar section-->
       <section class="banner3">
         <div class="banner3-content">
@@ -258,7 +268,7 @@
                                 About Us
                             </span>
                     </a>
-                    <a href="solutions.html" class="text-dark d-flex align-items-center para my-3">
+                    <a href="our-services.html" class="text-dark d-flex align-items-center para my-3">
                         <span class="material-symbols-outlined mx-1" style="font-size:16px !important;">
                             chevron_right
                             </span>
